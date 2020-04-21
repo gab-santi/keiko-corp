@@ -10,11 +10,8 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <!--  Header Section  -->
@@ -356,7 +353,22 @@
       </p>
     </footer>
 
-    <!--  End Footer Section  -->
+	<!--  End Footer Section  -->
+	<script>
+		function addCSS(path) {
+			var head = document.getElementsByTagName('head');
+			var css = document.createElement('link');
+			css.rel = "stylesheet";
+			css.type = "text/css";
+			css.href = path;
+			head[0].appendChild(css);
+		}
+
+		addCSS("css/bootstrap.css");
+		addCSS("css/owl.transitions.css");
+		addCSS("css/owl.carousel.css");
+		addCSS("css/animate.css");
+	</script>
 
     <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="js/ajaxchimp.js"></script>

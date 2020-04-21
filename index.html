@@ -10,8 +10,9 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
 
-
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" /> -->
   </head>
   <body>
     <!--  Header Section  -->
@@ -84,6 +85,22 @@
       </div>
     </section>
     <!--  End Hero Section  -->
+
+    <script>
+      function addCSS(path) {
+        var head = document.getElementsByTagName("head");
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        css.href = path;
+        head[0].appendChild(css);
+      }
+
+	  addCSS("css/bootstrap.css");
+	  addCSS("css/animate.css");
+      addCSS("css/owl.transitions.css");
+      addCSS("css/owl.carousel.css");
+    </script>
 
     <!--  Featured On Section  -->
     <section class="featured_on">
@@ -353,32 +370,17 @@
       </p>
     </footer>
 
-	<!--  End Footer Section  -->
-	<script>
-		function addCSS(path) {
-			var head = document.getElementsByTagName('head');
-			var css = document.createElement('link');
-			css.rel = "stylesheet";
-			css.type = "text/css";
-			css.href = path;
-			head[0].appendChild(css);
-		}
-
-		addCSS("css/bootstrap.css");
-		addCSS("css/owl.transitions.css");
-		addCSS("css/owl.carousel.css");
-		addCSS("css/animate.css");
-	</script>
+    <!--  End Footer Section  -->
 
     <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="js/ajaxchimp.js"></script>
 
-    <script defer type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script defer type="text/javascript" src="js/wow.js"></script>
-    <script defer type="text/javascript" src="js/parallax.js"></script>
-    <script defer type="text/javascript" src="js/nicescroll.js"></script>
-    <script defer type="text/javascript" src="js/scrollTo.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js" defer></script>
+    <script type="text/javascript" src="js/wow.js" defer></script>
+    <script type="text/javascript" src="js/parallax.js" defer></script>
+    <!-- <script type="text/javascript" src="js/nicescroll.js" defer></script> -->
+    <script type="text/javascript" src="js/scrollTo.js" defer></script>
 
-    <script defer type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js" defer></script>
   </body>
 </html>
